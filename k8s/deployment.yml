@@ -13,10 +13,10 @@ spec:
     app: my-nginx
   spec:
    containers:
-   -name: nginx
+   - name: nginx
     image: nginx:latest
     ports:
-    -containerPort: 80
-    volume Mounts:
-    -name: nginx-storage
-     mountPath: /usr/share/nginx/html
+    - containerPort: 80
+    volumeMounts:
+    - name: nginx-storage
+      mountPath: /usr/share/nginx/html
